@@ -17,7 +17,7 @@ class Monedas extends HTMLElement {
 		this.x = -158;
 		this.id="moneda"
 		this.y = Math.random() * window.innerHeight - 120;
-		this.innerHTML="<img src='./images/moneda1.png'  width='60px' height='70px'>";
+		this.innerHTML="<img src='../img/moneda1.png'  width='60px' height='70px'>";
 		this.velocidad = 1;
 		this.style.position ="fixed";
 		this.style.display="none";
@@ -58,7 +58,7 @@ class Hongo extends HTMLElement {
 		this.x = -100;
 		this.id="hongo"
 		this.y = Math.random() * window.innerHeight - 120;
-		this.innerHTML="<img id='hongo' src='./images/hongo2.png'  width='60px' height='70px'>";
+		this.innerHTML="<img id='hongo' src='../img/hongo2.png'  width='60px' height='70px'>";
 		this.velocidad =  1;
 		this.style.position ="fixed";
 		this.style.display="none";
@@ -100,7 +100,7 @@ class Mario extends HTMLElement {
 		this.id = "mario";
 		this.x = window.innerWidth / 2 - 50;
 		this.y = window.innerHeight - 250;
-		this.innerHTML="<img src='./images/logomario.png'  width='60px' height='70px'>";
+		this.innerHTML="<img src='../img/logomario.png'  width='60px' height='70px'>";
 		this.style.position="fixed";
 		this.style.display="none";
 		this.callback = (e) => this.onKeyDown(e);
