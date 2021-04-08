@@ -10,14 +10,20 @@
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    }
 
 
    #pun{
-     
+
      position: fixed;
-     color:yellow;
-     font-size: 30px;
+     font-size: 25px;
+     font: bold 25px/1 verdana;
+    text-align: center;
+    color: #daf307;
+    text-shadow: 0 2px 0 #bcd206, 0 4px 0 #aec106, 0 6px 0 #9fb105, 0 8px 0 #90a005, 3px 8px 15px rgb(0 0 0 / 10%), 3px 8px 5px rgb(0 0 0 / 30%);
+    text-transform: uppercase;
+
 
    }
    #elePuntaje{
@@ -26,6 +32,16 @@
      color:yellow;
      font-size: 30px;
 
+   }
+
+   #nom{
+    position: fixed;
+    font: bold 25px/1 verdana;
+    text-align: center;
+    color: #daf307;
+    text-shadow: 0 2px 0 #bcd206, 0 4px 0 #aec106, 0 6px 0 #9fb105, 0 8px 0 #90a005, 3px 8px 15px rgb(0 0 0 / 10%), 3px 8px 5px rgb(0 0 0 / 30%);
+    text-transform: uppercase;
+     display:none;
    }
 
    footer{
