@@ -2,94 +2,221 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  
-  <title>Mario bros</title>
-  
-
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi juego Solis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-danger" >
+
+		<img src="./img/logomario.png" width="60px" height="70px"/>&nbsp;
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#inicio" >Inicio<span class="sr-only">(current)</span></a>
+				</li>	  
+				<li class="nav-item">
+					<a class="nav-link" href="#instrucciones">Instrucciones</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#dinamica">Dinámica </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#video">Video</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="bueno.html">Empezar juego</a>
+				</li>
+
+
+			</ul>
+		</div>
+
+	</nav>
+		
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" height="500px" width="780px"  src="./img/carusel4.jpg" alt="First slide">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>Bienvenido al juego de Mario Bros</h2>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" height="500px" width="780px" src="./img/carusel6.jpg" alt="Second slide">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>Invita a tus amigos a jugar</h2>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" height="500px" width="780px" src="./img/carusel7.jpg" alt="Third slide">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>Diversión al máximo</h2>
+				</div>
+			</div> 
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Siguiente</span>
+		</a>
+	</div>
+	<br>
+	<div class="container">
+		<hr>
+		<div class="jumbotron" id="instrucciones" style="background-color: #dc3545; color: white">
+			<div class="container">
+				<h1 class="">Instrucciones</h1>
+				<h6>A continuación, se muestran las instrucciones para poder manejar el juego.</h6>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-3">
+				<center>
+					<h4 style="color: #EABE3F"> Movimiento arriba </h4>
+
+					<img src="./img/arriba.jpg" width="130px" height="90px" style="border-radius: 35px;">
+				</center>
+				
+				<br>
+				<p ><strong>Debes de dar clic con la tecla que tiene una flecha que va en dirección hacia arriba, para que Mario se mueva hacia ese sentido. </strong></p>
+				
+			</div>
+			<div class="col-md-3">
+				<center>
+					<h4 style="color: #EABE3F"> Movimiento abajo </h4>
+
+					<img src="./img/abajo.jpg" width="130px" height="90px" style="border-radius: 35px;">
+				</center>
+				<br>
+				
+				<p><strong>Debes de dar clic con la tecla que tiene una flecha que va en dirección hacia abajo, para que Mario se mueva hacia ese sentido.</strong> </p>
+				
+			</div>
+			<div class="col-md-3">
+				<center>
+					<h4 style="color: #EABE3F"> Movimiento izquierda </h4>
+
+					<img src="./img/izquierda.jpg" width="130px" height="90px" style="border-radius: 35px;">
+				</center>
+				<br>
+				
+				<p><strong>Debes de dar clic con la tecla que tiene una flecha que va en dirección hacia la izquierda, para que Mario se mueva hacia ese sentido. </strong></p>
+				
+			</div>
+			<div class="col-md-3">
+				<center>
+					<h4 style="color: #EABE3F"> Movimiento derecha </h4>
+
+					<img src="./img/derecha.jpg" width="130px" height="90px" style="border-radius: 35px;">
+				</center>
+				<br>
+
+				<p><strong>Debes de dar clic con la tecla que tiene una flecha que va en dirección hacia la derecha, para que Mario se mueva hacia ese sentido.</strong></p>
+
+			</div>
+		</div>
+
+		<hr>
+
+	</div> 
+
+	<div class="container">
+		<div class="col-sm-12" id="inicio" style="background-color:#dc3545; color:white;">
+			<br>
+			<main role="main" class="inner cover text-center" >
+				<h1 class="cover-heading">Dinámica del juego </h1>
+			</main>
+			<br>
+		</div>
+	</div>
+	<br>
+	<div class="container" id="dinamica">
+		<div class="row">
+			<div class="col-lg-4">
+				<center>
+					<img class="rounded-circle"  src="./img/moneda1.png" alt="Generic placeholder image" width="140" height="140">
+					<h2>Monedas</h2>
+					<p>Mario tendrá la misíon de recoger el mayor número de monedas para tener un gran puntaje. </p>
+				</center>
+			</div><!-- /.col-lg-4 -->
+			<div class="col-lg-4">
+				<center>
+					<img class="rounded-circle" src="./img/hongo2.png" alt="Generic placeholder image" width="140" height="140">
+					<h2>Hongos</h2>
+					<p>Tendrás que alejarte de los hongos para evitar morir.</p>
+				</center>
+			</div><!-- /.col-lg-4 -->
+			<div class="col-lg-4">
+				<center>
+					<img class="rounded-circle" src="./img/logomario.png" alt="Generic placeholder image" width="140" height="140">
+					<h2>Mario Bros</h2>
+					<p>Es el jugador principal que tiene que moverse para agarrar las monedas.</p>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col-sm-12" id="inicio" style="background-color:#dc3545; color:white;">
+			<br>
+			<main role="main" class="inner cover text-center" >
+				<h1 class="cover-heading">Video de demostración </h1>
+			</main>
+			<br>
+		</div>
+	</div>
+	<br>
+
+	<div class="container" id="video">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="./img/video.mp4" width="480px" height="320px"></iframe>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<br>
+
+
+
+	<footer class="mastfoot mt-auto"  style="background-color:#dc3545; color:white; height:80px;">
+
+		<div class="inner">
+			<br>
+			<center>
+				<p  style="font-size:20px;">&copy; 2021 José Bryan Solis Jiménez.</p>
+			</center>
+		</div>
+	</footer>
+
 	
-  <audio id="musica" src="./img/cancion.mp3" type="audio/mpeg" autoplay="autoplay" loop="loop"></audio>
 
-	<div id="pun"><span > Puntaje: &nbsp; </span><span id="elePuntaje"> 0</span></div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-	
-	<mario-web></mario-web>
-	<moneda-web></moneda-web>
-	<hongo-web></hongo-web>
-
-	<br><br><br><br>
-
-
-  <!--Modal empezar juego-->
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header" >
-          <h5 class="modal-title" id="exampleModalCenterTitle">Bienvenido al juego de Marios Bros</h5>
-
-        </div>
-        <div class="modal-body">
-          <center>
-            <img src="./img/marioempieza.jpg" width="250px" height="150px">
-          </center>
-        </div>
-        <div class="modal-footer">
-
-          <button type="button" class="btn btn-primary" id="empezarJuego">Empezar juego</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Modal terminar juego-->
-  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header" >
-          <h5 class="modal-title" id="exampleModalCenterTitle">Haz perdido</h5>
-
-        </div>
-        <div class="modal-body">
-          <center>
-            <p>¡Inténtalo de nuevo!</p>
-            <img src="./img/mariopierde.jpg" width="250px" height="150px">
-            <h1  id="puntajeTotal"> 0 </h1>
-            <p >Puntos</p>  
-          </center>
-        </div>
-        <div class="modal-footer">
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>
-     &copy; 2021
-     Solis Jimenez José Bryan.
-   </p>
- </footer>
-
- <script src="./js/script.js"></script>
-
-
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
- <script type="text/javascript">
-  $(function(){
-    $("#modal").modal('show');
-  });
-</script>
 
 </body>
 </html>
+
