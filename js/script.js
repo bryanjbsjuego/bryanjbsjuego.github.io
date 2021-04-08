@@ -6,6 +6,7 @@ const modal=document.querySelector('#modal');
 const modal2=document.querySelector('#modal2');
 const puntajeTotal=document.querySelector('#puntajeTotal');
 const musica=document.querySelector('#musica');
+const mostrar=document.querySelector('#mostarNombre');
 
 let puntaje = 0;
 
@@ -265,6 +266,7 @@ function iniciar(){
 	puntaje=0;
 	elePuntaje.innerHTML= puntaje;
 	puntajeTotal.innerHTML=puntaje;
+	let nom=document.getElementById("nom").style.display="flex";
 	let mario = document.getElementById("mario").style.display="flex";
 
 }
@@ -282,6 +284,9 @@ empezarJuegoBtn.addEventListener('click', (e)=>{
 	Animacion();
 
 	musica.play();
+	let nombre=document.querySelector('#nombre').value;
+
+	mostrar.innerHTML = nombre;
 	
 	$(function(){
 		$("#modal").modal('hide');
