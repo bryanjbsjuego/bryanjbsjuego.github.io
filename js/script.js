@@ -19,7 +19,7 @@ class Monedas extends HTMLElement {
 		this.id="moneda"
 		this.y = Math.random() * window.innerHeight - 120;
 		this.innerHTML="<img src='../img/moneda1.png'  width='60px' height='70px'>";
-		this.velocidad = 1;
+		this.velocidad = 2;
 		this.style.position ="fixed";
 		this.style.display="none";
 
@@ -56,7 +56,7 @@ class Hongo extends HTMLElement {
 	constructor() {
 		super();
 		this.velocidad = 0;
-		this.x = -100;
+		this.x = window.innerWidth;
 		this.id="hongo"
 		this.y = Math.random() * window.innerHeight - 120;
 		this.innerHTML="<img id='hongo' src='../img/hongo2.png'  width='60px' height='70px'>";
@@ -78,7 +78,7 @@ class Hongo extends HTMLElement {
 		}
 
 		if(this.velocidad>=1){
-			this.x += this.velocidad=1;
+			this.x -= this.velocidad=1;
 		}
 		let mario = document.getElementById("mario");
 		if (Colision.procesoColision2(this, mario)) {			
