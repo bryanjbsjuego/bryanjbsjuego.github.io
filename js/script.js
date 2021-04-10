@@ -275,7 +275,7 @@ function resetear(){
 	
 	setTimeout(function() {
 		window.location.reload();
-	}, 3500);
+	}, 2500);
 }
 
 empezarJuegoBtn.addEventListener('click', (e)=>{
