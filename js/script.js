@@ -278,6 +278,10 @@ function resetear(){
 	}, 2000);
 }
 
+function reiniciar(){
+	window.location.reload();
+}
+
 empezarJuegoBtn.addEventListener('click', (e)=>{
 	e.preventDefault();
 	iniciar();
